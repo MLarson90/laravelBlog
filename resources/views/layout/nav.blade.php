@@ -17,6 +17,7 @@
     <ul class="nav navbar-nav">
       <li class="active"><li><a href="/login">Home<span class="sr-only">(current)</span></a></li>
       <li><a href="/about">About</a></li>
+    
     </ul>
 
     <ul class="nav navbar-nav navbar-right">
