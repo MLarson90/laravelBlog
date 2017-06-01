@@ -35,8 +35,9 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
                         &nbsp;
-                        <li class="active"><li><a href="/">Home<span class="sr-only">(current)</span></a></li>
+                        <li class="active"><li><a href="/admin">Home<span class="sr-only">(current)</span></a></li>
                         <li><a href="/about">About</a></li>
+                        <li><a href="/newpost">New Post</a></li>
                     </ul>
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">

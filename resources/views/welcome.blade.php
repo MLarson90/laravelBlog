@@ -2,6 +2,8 @@
 @section('content')
   <div class="container">
 <h1>Hi Xing</h1>
+
+
 @foreach( App\Post::show() as $post)
 <h2>{{ $post->title }}</h2>
 <p>{{ $post->entry }}</p>
