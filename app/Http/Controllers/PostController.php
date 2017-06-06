@@ -13,7 +13,7 @@ class PostController extends Controller
      */
     public function index()
     {
-      return view('newPost');
+      return view('newpost');
     }
 
     /**
@@ -23,7 +23,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('post.create');
     }
 
     /**
@@ -34,11 +34,17 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
+      //validate data from form
+      $this->validate($request, array(
+        'title'=> 'required|max:255',
+        'entry'=> 'required'
+      ));
+      // store in database
       $post = new Post;
       $post->title = $request->title;
       $post->entry = $request->entry;
       $post->save();
-      return redirect('newpost');
+      return view('newpost');
     }
 
     /**

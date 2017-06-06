@@ -1,6 +1,12 @@
 @extends('layout')
 
 @section('content')
+@if(count($errors))
+  @foreach($errors->all() as $error)
+    <li>{{ $error }}</li>
+  @endforeach
+@endif
+
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
